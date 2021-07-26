@@ -7,8 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Notes</h1>
+    <h1 id="mainHeader">JS Practice</h1>
+    <script>
+        //Modify the element bby id
+        alert("About to change the page")
 
-  <script src="app.js"></script>  
+        //Get a reference to the element by id
+        let elementToChg = document.getElementById('mainHeader'); //get a reference to the element
+        
+        //change it's inntertext to something else
+        elementToChg.innerText = "MY NEW SUPER TEXT!!!";
+
+        //creat a brand new element
+        let newList = document.createElement('ul');
+
+        //append an element
+        for (let i = 0; i < 5; i++)
+        {
+            let newLi = document.createElement('li')//create next li
+            newLi.textContent = "Item " + i;// set the value of li
+            //append to the list
+            newList.appendChild(newLi);
+        }
+
+        //Add our new list to the DOM
+        elementToChg.appendChild(newList);
+
+    </script>
+
+  <!-- <script src="app.js"></script>   -->
 </body>
 </html>

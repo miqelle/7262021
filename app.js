@@ -123,9 +123,15 @@ console.log("Company 2 name: " + company2.name + " is it open? " + company2.areY
 //add them all to an array
 let myCompanyList = [company1, company2, company3];
 
-//loop through company list of city
+//loop through company list of cities
 console.log("Here's all of the cities for the stores")
+
+//print each city for each company instance
 for (let i = 0; i < myCompanyList.length; i++)
 {
     console.log(myCompanyList[i].city); //use dot notation to get specific properties or methods
 }
+
+//what is 'this' in OOP is talking about the object you're currently working on
+
+//DOM(Document Object Model)
