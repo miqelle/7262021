@@ -58,9 +58,10 @@ const person = {
   sayHi: function () {
     alert("Well hello there!!");
   },
-};
+}
 
-//log the person instance
+
+/* //log the person instance
 console.log(person);
 
 //dot notation
@@ -80,6 +81,51 @@ console.log(person.address.street);
 console.log(person.name.last);
 
 //log the middle name of person
-console.log(person.name.middle);
+console.log(person.name.middle); */
 
 //what does encapsulation mean? Has all info/data needed
+
+//create a shop object with name, city, store hours
+let company1 = 
+{
+    name: "Nike",
+    city: "Miami",
+    areYouOpen: function()
+    {
+        return("Sorry we're not open")
+    }
+
+}
+let company2 = 
+{
+    name: "Chanel",
+    city: "Nashville",
+    areYouOpen: function()
+    {
+        return("Yes we're open")
+    }
+
+}
+let company3 = 
+{
+    name: "Walmart",
+    city: "Chatanooga",
+    areYouOpen: function()
+    {
+        return("Yes we're open")
+    }
+
+}
+
+//use dot notation for company 2
+console.log("Company 2 name: " + company2.name + " is it open? " + company2.areYouOpen());
+
+//add them all to an array
+let myCompanyList = [company1, company2, company3];
+
+//loop through company list of city
+console.log("Here's all of the cities for the stores")
+for (let i = 0; i < myCompanyList.length; i++)
+{
+    console.log(myCompanyList[i].city); //use dot notation to get specific properties or methods
+}
